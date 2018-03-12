@@ -1,0 +1,24 @@
+application: canvas-sum-91507
+version: 1
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /.*
+  script: index.php
+
+- url: /modal
+  static_dir: modal
+  application_readable: true
+
+- url: /helper_function
+  static_dir: helper_function
+  application_readable: true
+
+- url: /clubs_image_file
+  static_dir: clubs_image_file
+  application_readable: true
+
+- url: /event_object
+  static_dir: event_object
+  application_readable: true
